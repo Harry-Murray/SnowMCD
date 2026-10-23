@@ -25,7 +25,7 @@ SnowMCD 是一个 JavaFX 编写的 Minecraft **全量下载器**：选择版本�
 ## 运行环境
 
 - Windows 10 / 11 x64：安装包 / 便携版已内置 JRE，**不需要**安装 Java
-- macOS（Intel / Apple Silicon）、Linux（x64 / arm64）：使用 `SnowMCD-1.0.0-cross.jar`，需要 **JDK 25**
+- macOS（Intel / Apple Silicon）、Linux（x64 / arm64）：使用 `SnowMCD-1.0.0.jar`，需要 **JDK 25**
 - 需要能访问 `https://bmclapi2.bangbang93.com`
 
 ## 安装与使用
@@ -39,14 +39,11 @@ SnowMCD 是一个 JavaFX 编写的 Minecraft **全量下载器**：选择版本�
 静默安装：
 
 ```bat
-SnowMCD-1.0.0.exe /quiet
+SnowMCD-1.0.0-installer.exe /quiet
 ```
 
 卸载：Windows“设置 → 应用”中卸载 SnowMCD，或执行安装器对应的 MSI 卸载项。
 
-### 便携版
-
-直接双击 `dist\SnowMCD\SnowMCD.exe`，无需安装。
 
 ### 跨平台 jar（macOS / Linux / Windows）
 
@@ -55,13 +52,13 @@ SnowMCD-1.0.0.exe /quiet
 要求：目标机器已安装 **JDK 25**（需要 `java` 命令；JavaFX 由 jar 自带，不用另装）。
 
 ```bash
-java -jar SnowMCD-1.0.0-cross.jar
+java -jar SnowMCD-1.0.0.jar
 ```
 
 也可以直接走命令行模式：
 
 ```bash
-java -jar SnowMCD-1.0.0-cross.jar --cli --version 1.20.1 --dir ~/mc --concurrency 32
+java -jar SnowMCD-1.0.0.jar --cli --version 1.20.1 --dir ~/mc --concurrency 32
 ```
 
 - macOS：Intel 与 Apple Silicon 均可。网络下载的 jar 如被 Gatekeeper 隔离，可执行
